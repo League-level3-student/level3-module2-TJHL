@@ -59,10 +59,12 @@ public class _00_SortedArrayChecker {
 	//   (Use the compareTo(String) method)
 		
 		static boolean stringArraySorted(String[] d) {
+		
 			for (int i = 0; i < d.length-1; i++) {
-				d[i].s
+				if(d[i].compareTo(d[i+1])>0) {
+				System.out.println(d[i].charAt(0));
 					return false;
-					
+				}	
 			}
 			return true;
 		}

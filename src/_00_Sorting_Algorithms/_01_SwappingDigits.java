@@ -36,14 +36,16 @@ class _01_SwappingDigits {
 	//   Iterate through the array and when you find two elements that are out
 	//   of order, swap them. Repeat this until the array is in order.
 	public static void sortIntArray(int[] arr) {
-		for (int i = 0; i < arr.length-1; i++) {
-			if(arr[i]<arr[i+1]) {
-				int a=0;
-				int b=0;s
-				a=arr[i];
-				b=arr[i+1];
-				arr[i]=b;
-				arr[i+1]=a;
+		for (int j = 0; j < arr.length-1; j++) {
+			for (int i = 0; i < arr.length-1; i++) {
+				if(arr[i]>arr[i+1]) {
+					int a=0;
+					int b=0;
+					a=arr[i];
+					b=arr[i+1];
+					arr[i]=b;
+					arr[i+1]=a;
+				}
 			}
 		}
 	}
@@ -52,6 +54,20 @@ class _01_SwappingDigits {
 	//   *Hint* it helps to sort it first.
 	//   *Double Hint* Use the method you already wrote in step 2 to sort it
 	public static int findMiddle(int[] arr) {
-		return 0;
+		for (int j = 0; j < arr.length-1; j++) {
+			for (int i = 0; i < arr.length-1; i++) {
+				if(arr[i]>arr[i+1]) {
+					int a=0;
+					int b=0;
+					a=arr[i];
+					b=arr[i+1];
+					arr[i]=b;
+					arr[i+1]=a;
+				}
+			}
+		}
+		int middle = 0;
+		middle = arr.length/2;
+		return arr[middle];
 	}
 }

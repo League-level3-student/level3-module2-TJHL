@@ -26,18 +26,22 @@ public class _02_SortingAlgorithms {
 		
 		switch(choice) {
 		case "Bubble":{
+			//DONE
 			new SortingVisualizer(new BubbleSorter());
 			break;
 		}
 		case "Selection":{
+			//DONE
 			new SortingVisualizer(new SelectionSorter());
 			break;
 		}
 		case "Insertion":{
+			//DONE 
 			new SortingVisualizer(new InsertionSorter());
 			break;
 		}
 		case "Quick":{
+			//
 			new SortingVisualizer(new QuickSorter());
 			break;
 		}
@@ -46,6 +50,7 @@ public class _02_SortingAlgorithms {
 			break;
 		}
 		case "Heap":{
+			//IN PROGRESS
 			new SortingVisualizer(new HeapSorter());
 			break;
 		}

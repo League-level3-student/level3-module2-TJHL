@@ -45,11 +45,12 @@ public class QuickSorter extends Sorter {
 				b= array[j];
 				array[i]= b;
 				array[j]= a;
-				display.updateDisplay();
-				
+								
 				i=i+1;
-				j=j-1;
+				j=j-1; 
+				display.updateDisplay();
             }
+       }
             //7. if i is less than or equal to j, 
             //   swap the array elements at i and j.
             //   In the same if-statement, increase i by 1 
@@ -66,6 +67,7 @@ public class QuickSorter extends Sorter {
             if(i<high) {
             	quickSort(array, i, high, display);
             }
-	}
+	
+      
 	}
 }

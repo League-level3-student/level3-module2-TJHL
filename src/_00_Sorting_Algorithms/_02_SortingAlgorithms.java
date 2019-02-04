@@ -41,11 +41,12 @@ public class _02_SortingAlgorithms {
 			break;
 		}
 		case "Quick":{
-			//
+			//DONE
 			new SortingVisualizer(new QuickSorter());
 			break;
 		}
 		case "Merge":{
+			//DONE
 			new SortingVisualizer(new MergeSorter());
 			break;
 		}

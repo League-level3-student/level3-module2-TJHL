@@ -51,11 +51,12 @@ public class _02_SortingAlgorithms {
 			break;
 		}
 		case "Heap":{
-			//IN PROGRESS
+			//DONE
 			new SortingVisualizer(new HeapSorter());
 			break;
 		}
 		case "Bogo":{
+			//IN PROGRESS
 			new SortingVisualizer(new BogoSorter());
 			break;
 		}

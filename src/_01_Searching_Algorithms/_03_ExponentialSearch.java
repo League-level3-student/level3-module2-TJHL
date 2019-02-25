@@ -32,13 +32,15 @@ public class _03_ExponentialSearch {
 			minimum=counter;
 		}
 		//8. otherwise, set minimum equal to the length of the array minus 1.
-	
+		else {
+			minimum=array.length-1;
+		}
 		//9. use the binary search method you wrote using the following parameters:
 		//		the array to be searched
 		//		half of the counter
 		//		minimum
 		//		the value to be found
-		
+		_01_BinarySearch.binarySearch(array, counter/2, minimum, value);
 		//10. return the result
 		return 0;
 	}

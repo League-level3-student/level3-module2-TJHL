@@ -6,7 +6,7 @@ public class _00_LinearSearch {
 	// linear search. This is best for short unsorted lists of data.
 	public static int linearSearch(String[] words, String value) {
 		for (int i = 0; i < words.length; i++) {
-			if(words[i]==value) {
+			if(words[i].equals(value)) {
 				return i;
 			}
 		}
